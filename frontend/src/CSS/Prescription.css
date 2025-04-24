@@ -1,0 +1,218 @@
+/* Page Layout */
+.simulation-page {
+    width: 1400px;
+    max-width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* ===================================
+     LEFT COLUMN — Prescription Styling
+     =================================== */
+  
+  .prescription {
+    position: relative;
+    padding: 3rem 2rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: "Times New Roman", serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Rx symbol */
+  .rx-logo {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: #000;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Patient and address */
+  .patient-info {
+    margin-bottom: 3rem;
+  }
+  
+  .line-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .line-label span {
+    width: 90px;
+    font-weight: bold;
+  }
+  
+  .line {
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin-left: 1rem;
+    padding-bottom: 0.25rem;
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Prescription content */
+  .prescription-details {
+    margin-top: 5rem;
+    margin-bottom: auto;
+  }
+  
+  .prescription-details p {
+    margin: 1.25rem 0;
+  }
+  
+  /* Signature line */
+  .signature-area {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  
+  /* ===================================
+     RIGHT COLUMN — Response/Label Box
+     =================================== */
+  
+.response-box {
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    display: block;
+}
+
+.response-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+/* Inline layout for patient info + bottle image */
+.label-patient-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .bottle-image-inline {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin-top: -1rem;
+  }
+
+  
+
+  
+  /* ===================================
+     Pill Label Styling
+     =================================== */
+  
+  .pill-label {
+    background-color: #fffdf5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    flex: 1;
+  }
+  
+  /* Patient info */
+  .label-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Qty row */
+  .label-qty {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .label-qty input {
+    width: 60px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Inline drug + dosage like “Ibuprofen 800 mg tablets” */
+  .label-drug-line {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .inline-input {
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  .drug-name {
+    width: 140px;
+  }
+  
+  .dosage {
+    width: 80px;
+  }
+  
+  /* Footer details */
+  .label-details {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #444;
+    border-top: 1px solid #ddd;
+    padding-top: 0rem;
+  }
+  
+  /* Directions textarea */
+  .label-directions label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  
+  .label-directions textarea {
+    width: 100%;
+    padding: 0.2rem;
+    padding-right: 0rem;
+    font-size: 0.95rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .question-box {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    font-size: 1rem;
+    color: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
