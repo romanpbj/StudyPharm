@@ -8,6 +8,7 @@ import Simulation from './pages/Simulation';
 import Result from './pages/Results';
 import View from './pages/View';
 import History from './pages/History';
+import Settings from './pages/Settings';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/profile' element = {<Profile />} />
           <Route path='/view' element = {<View />} />
           <Route path = '/history' element = {<History />} />
+          <Route path = '/settings' element = {<Settings />} />
         </Routes>
       </div>
     </Router>

@@ -45,7 +45,8 @@ function Profile(){
     return (
         <div className="profile-page">
           <h1>Welcome {username}</h1>
-      
+          <button onClick={() => navigate("/settings")}>Settings</button>
+        
           <div className="start-section">
             <button onClick={handleSimulation}>Begin Simulation</button>
             <p>{prescId}</p>
