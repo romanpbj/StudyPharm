@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+      python: 3.10
+    commands:
+      - echo Installing React dependencies...
+      - cd frontend
+      - npm install
+      - cd ../backend
+      - echo Installing Flask dependencies...
+      - pip install -r requirements.txt -t .
+      - cd ..
+  build:
+    commands:
+      - echo Building React frontend...
+      - cd frontend
+      - npm run build
+      - cd ..
+  post_build:
+    commands:
+      - echo Packaging frontend and backend...
+      - mkdir -p packaged/frontend
+      - mkdir -p packaged/backend
+      - cp -r frontend/build packaged/frontend/
+      - cp -r backend/* packaged/backend/
+artifacts:
+  files:
+    - packaged/**/*
